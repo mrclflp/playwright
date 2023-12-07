@@ -58,21 +58,86 @@ test('Mark a todo as completed; check active & completed lists', async ({ page }
   // check the 1st todo appears as completed
   await expect(page.getByTestId('todo-item').nth(0)).toHaveClass('completed');
 
-  // check the number of active todos is 1
-  await expect(page.getByTestId('todo-count')).toHaveText('1 item left');
+  // check the number of active todos is 3
+  await expect(page.getByTestId('todo-count')).toHaveText('3 items left');
 
-  // go to Active and check there is the 1st todo
+  // go to Active and check there are 3 todos
   await page.getByRole('link').filter({hasText: 'Active'}).click();
-  await expect(page.getByTestId('todo-title')).toHaveText(todoItems[1]);
+  await expect(page.getByTestId('todo-title')).toHaveText([
+    todoItems[1],
+    todoItems[2],
+    todoItems[3]
+  ]);
 
-  // go to Completed and check there is the 2nd todo
+  // go to Completed and check there is the 1st todo
   await page.getByRole('link').filter({hasText: 'Completed'}).click();
   await expect(page.getByTestId('todo-title')).toHaveText(todoItems[0]);
 });
 
+test('Delete a todo item', async ({ page }) => {
+  // create default todos
+  await createDefaultTodos(page);
+
+  // delete 4th todo
+  await page.getByTestId('todo-item').filter({hasText: todoItems[3]}).hover();
+  await page.getByTestId('todo-item').filter({hasText: todoItems[3]}).getByLabel('Delete').click()
+
+  // check the 4th todo is not in the list
+  await expect(page.getByTestId('todo-item')).toHaveText([
+    todoItems[0],
+    todoItems[1],
+    todoItems[2]
+  ]);
+
+  // check the number of active todos is 3
+  await expect(page.getByTestId('todo-count')).toHaveText('3 items left');
+});
+
+// edit a todo item
+test('Edit a todo item', async ({ page }) => {
+  // create default todos
+  await createDefaultTodos(page);
+
+  // edit 3rd todo
+  await page.getByTestId('todo-item').filter({hasText: todoItems[2]}).dblclick();
+  await page.getByTestId('todo-item').filter({hasText: todoItems[2]}).getByRole('textbox').fill('edited');
+  await page.keyboard.press('Enter');
+
+  // check the 3rd todo is edited
+  await expect(page.getByTestId('todo-item')).toHaveText([
+    todoItems[0],
+    todoItems[1],
+    'edited',
+    todoItems[3]
+  ]);
+});
+
+// mark all todos as completed
+test('Mark all todos as completed', async ({ page }) => {
+  // create default todos
+  await createDefaultTodos(page);
+
+  // mark all todos as completed
+  await page.getByRole('checkbox', {name: 'Mark all as complete'}).click();
+
+  // check all todos are completed
+  await expect (page.getByTestId('todo-item').nth(0)).toHaveClass('completed');
+  await expect (page.getByTestId('todo-item').nth(1)).toHaveClass('completed');
+  await expect (page.getByTestId('todo-item').nth(2)).toHaveClass('completed');
+  await expect (page.getByTestId('todo-item').nth(3)).toHaveClass('completed');
+
+  // check the number of active todos is 0
+  await expect(page.getByTestId('todo-count')).toHaveText('0 items left');
+});
+
+// helper function to create default todos
 async function createDefaultTodos(page) {
   await page.getByPlaceholder('What needs to be done?').fill(todoItems[0]);
   await page.keyboard.press('Enter');
   await page.getByPlaceholder('What needs to be done?').fill(todoItems[1]);
+  await page.keyboard.press('Enter');
+  await page.getByPlaceholder('What needs to be done?').fill(todoItems[2]);
+  await page.keyboard.press('Enter');
+  await page.getByPlaceholder('What needs to be done?').fill(todoItems[3]);
   await page.keyboard.press('Enter');
 }
