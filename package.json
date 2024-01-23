@@ -10,7 +10,7 @@
     "undici-types": "^5.25.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.39.0",
+    "@playwright/test": "^1.41.1",
     "@types/node": "^20.8.8"
   },
   "scripts": {},
