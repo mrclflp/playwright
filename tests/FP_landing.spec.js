@@ -58,6 +58,22 @@ test('Check the "Partneři" button leads to partner platforms page', async ({pag
     await expect(page.locator('h3 [style="font-size:28px;"]').getByText(platforms[partner])).toBeVisible();
 })
 
+test('Check the language selection', async ({ page }) => {
+  const langSelector = await page.getByTestId('languages-dropdown-handle')
+  await expect(langSelector).toBeVisible();
+  await langSelector.click();
+  await page.getByTestId('languages-dropdown-option-text').getByText('EN').click();
+  await expect(page).toHaveURL('https://www.flowpay.io/en');
+
+  await expect(page.getByRole('link', {name: 'Financing Calculator'})).toBeVisible();
+  await expect(page.getByLabel('Site').getByRole('link', { name: 'About Us' })).toBeVisible();
+  await expect(page.getByLabel('Site').getByRole('link', { name: 'Our Partner Platforms' })).toBeVisible();
+
+  await langSelector.click()
+  await page.getByTestId('languages-dropdown-option-text').getByText('CS').click();
+  await expect(page).toHaveURL('https://www.flowpay.io/')
+});
+
 // helper function to close cookies
 async function closeCookies(page) {
   await page.click('#cookiescript_close');
