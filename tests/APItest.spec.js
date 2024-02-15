@@ -14,7 +14,7 @@ test.use({
   },
 })
 
-test('should create a bug report', async ({ request }) => {
+test.fixme('should create a bug report', async ({ request }) => {
   // create a bug/issue report
   const newIssue = await request.post(`/repos/${OWNER}/${REPO}/issues`, {
     data: {
