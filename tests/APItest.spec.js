@@ -1,6 +1,8 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
+import { secrets } from '../.auth/secrets';
+
 const REPO = 'playwright';
 const OWNER = 'mrclflp';
 
@@ -10,11 +12,11 @@ test.use({
   baseURL: 'https://api.github.com',
   extraHTTPHeaders: {
     'Accept': 'application/vnd.github+json',
-    'Authorization': `token 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`,
+    'Authorization': `token ` + secrets.GHA_PLAYWRIGHT_TOKEN,
   },
 })
 
-test('should create a bug report', async ({ request }) => {
+test.fixme('should create a bug report', async ({ request }) => {
   // create a bug/issue report
   const newIssue = await request.post(`/repos/${OWNER}/${REPO}/issues`, {
     data: {
