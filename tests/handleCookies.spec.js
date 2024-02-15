@@ -5,7 +5,7 @@ import { chromium } from 'playwright';
 
 test('captureAndSetCookies', async () => {
   let cookies = [];
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
   try {
     const page = await context.newPage();
