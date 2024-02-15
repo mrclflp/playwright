@@ -1,3 +1,5 @@
+// https://medium.com/@armanabbasi/how-to-get-and-use-cookies-in-playwright-a-step-by-step-guide-for-beginners-d09bb345ff1
+
 import { test } from '@playwright/test';
 import { chromium } from 'playwright';
 
