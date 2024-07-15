@@ -1,0 +1,89 @@
+{
+  "cookies": [
+    {
+      "name": "__cf_bm",
+      "value": "EXqJeOmTY4aVxFgjb6P7cD46g3oxxNqVUxjziVIauSc-1719565522-1.0.1.1-TexOH9daLVrSuiLCyr2vORDkkhKXtVKl04JKXHtCf5skUqwVT872WenK1aCsiKAR",
+      "domain": ".eu.auth0.com",
+      "path": "/",
+      "expires": 1719567322.823794,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "did",
+      "value": "s%3Av0%3A1c422a31-9b6e-4b32-a341-ca1763f68c92%3A2dc7c51f78abb7b2098be76e4c0ba973c84679ec3c003b299b82737f61b89d11.w3hWccCQHmtt3HUksH1gc4nsON5PAilPewI0GdFkJa0",
+      "domain": "flowpay-dev.eu.auth0.com",
+      "path": "/",
+      "expires": 1751123124.163382,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "did_compat",
+      "value": "s%3Av0%3A1c422a31-9b6e-4b32-a341-ca1763f68c92%3A2dc7c51f78abb7b2098be76e4c0ba973c84679ec3c003b299b82737f61b89d11.w3hWccCQHmtt3HUksH1gc4nsON5PAilPewI0GdFkJa0",
+      "domain": "flowpay-dev.eu.auth0.com",
+      "path": "/",
+      "expires": 1751123124.163595,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth0",
+      "value": "s%3AySUOhYX2i8CU0Fb9OuUUaV32xxAXr0Ds.5p%2Bt3AgvtJX8ZZbC5q6lv8oaKZGcTZ8UWest81QWHlg",
+      "domain": "flowpay-dev.eu.auth0.com",
+      "path": "/",
+      "expires": 1719824725.620494,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "auth0_compat",
+      "value": "s%3AySUOhYX2i8CU0Fb9OuUUaV32xxAXr0Ds.5p%2Bt3AgvtJX8ZZbC5q6lv8oaKZGcTZ8UWest81QWHlg",
+      "domain": "flowpay-dev.eu.auth0.com",
+      "path": "/",
+      "expires": 1719824725.620778,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_legacy_auth0.PdRxR9BCXmcvRv1riHuC5QNQUxoEPyuO.is.authenticated",
+      "value": "true",
+      "domain": "dev.admin.my.flowpay.io",
+      "path": "/",
+      "expires": 1719651926,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth0.PdRxR9BCXmcvRv1riHuC5QNQUxoEPyuO.is.authenticated",
+      "value": "true",
+      "domain": "dev.admin.my.flowpay.io",
+      "path": "/",
+      "expires": 1719651926,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://dev.admin.my.flowpay.io",
+      "localStorage": [
+        {
+          "name": "settings",
+          "value": "{\"themeColor\":\"secondary\",\"mode\":\"light\",\"direction\":\"ltr\",\"appBarBlur\":true,\"navCollapsed\":false,\"contentWidth\":\"full\",\"verticalNavToggleType\":\"accordion\",\"skin\":\"semi-dark\"}"
+        },
+        {
+          "name": "@@auth0spajs@@::PdRxR9BCXmcvRv1riHuC5QNQUxoEPyuO::https://api.dev.admin.my.flowpay.io::openid profile email",
+          "value": "{\"body\":{\"access_token\":\"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InBKUXoxNE9HZ1JNdTh2b2VCOW9BaiJ9.eyJodHRwczovL2FwaS5kZXYuYWRtaW4ubXkuZmxvd3BheS5pby9yb2xlcyI6WyJBZG1pbiJdLCJpc3MiOiJodHRwczovL2Zsb3dwYXktZGV2LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NjdhYmRmYmI4YmVkYjYxNGU4MzliMWEiLCJhdWQiOlsiaHR0cHM6Ly9hcGkuZGV2LmFkbWluLm15LmZsb3dwYXkuaW8iLCJodHRwczovL2Zsb3dwYXktZGV2LmV1LmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE3MTk1NjU1MjYsImV4cCI6MTcxOTY1MTkyNiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsImF6cCI6IlBkUnhSOUJDWG1jdlJ2MXJpSHVDNVFOUVV4b0VQeXVPIiwicGVybWlzc2lvbnMiOlsiYWRtaW4iXX0.E8qt8siyOcFSIJIvYGA3_zqfvHUxdCSC9jSc_eEP7DpGelJuYhkczwm11CRmrjZNbMMSZRY9026Cc5Mz73iSsHtQgmCOTYGZsaM70LQONENjZAjEMeVVxYiC93X2iMkVNiBby_wmtVKTLyBdR6X_gklEs3Ue7xL_M34mtYAnXGYGxxTGoBvtDpfB9HzLc7pV_DF6pRkSMm5zsweVwC9bKWdeneuYn837tF4s_GL9Ss8t_QVPkL75PALiTxRvRRR9JAYHWs2Q-gC6CpzTSWt0Ojh8xMFBGET3UEwDcn6QzMOEZSCmCWfnkootWqr_cBwsWH3b0xzon_ps6kl2rHRMhw\",\"id_token\":\"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InBKUXoxNE9HZ1JNdTh2b2VCOW9BaiJ9.eyJodHRwczovL2FwaS5kZXYuYWRtaW4ubXkuZmxvd3BheS5pby9yb2xlcyI6WyJBZG1pbiJdLCJuaWNrbmFtZSI6ImRldit0ZXN0YXV0b21hdGlvbiIsIm5hbWUiOiJkZXZAZmxvd3BheS5pbyIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci8yNzYzMDk1YTE2OWM2Y2IwOTkyOThmNjUxNDYxMmI3Yj9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRmRlLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDI0LTA2LTI4VDA5OjA1OjI0LjI3NVoiLCJlbWFpbCI6ImRldkBmbG93cGF5LmlvIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmxvd3BheS1kZXYuZXUuYXV0aDAuY29tLyIsImF1ZCI6IlBkUnhSOUJDWG1jdlJ2MXJpSHVDNVFOUVV4b0VQeXVPIiwiaWF0IjoxNzE5NTY1NTI2LCJleHAiOjE3MTk2MDE1MjYsInN1YiI6ImF1dGgwfDY2N2FiZGZiYjhiZWRiNjE0ZTgzOWIxYSIsImF1dGhfdGltZSI6MTcxOTU2NTUyNCwic2lkIjoiaXlBMnNHajR2bEpOM3pwSFVneld0QmJ1RkJNU21HblQiLCJub25jZSI6IlgxbG5lalJEU0VKSFdFUlBPWEpYTTNGRFVGbHdPRlk0WjNKaFJFZDJkVlpHWlVWeVRqUjBVRkUxTGc9PSJ9.ktlafxmJDdaq9iOWc5PPOZpqn97aGk8tdl3MobwhKSXcAJHKrbf5M470aFptQ4ZY_ism3SWpiHEYyAHfyYx8RVR6k2RjehP8J3y3wyERWz_pKiO0rujQcqm7KJFBQocIxWVDFk1UXBLnApB50QIxShH8AbjWhURglr110QWRyUWmZVgqdIf09-iNq-pZN_CgWfOLgBBWNI6fifZIAuI4hOnV0awwN6Ghfy0V7fwtKD4PtQbyPgtfnspforeQjH3fQ7TUD5nRZI93biq11Yp5QpVF7CRDtQm-N0jnW45bW1fk3Sn_rfrGMNlA_6zRJ7tJZd_8u8sxQtY3cQkcDjt3Pg\",\"scope\":\"openid profile email\",\"expires_in\":86400,\"token_type\":\"Bearer\",\"decodedToken\":{\"encoded\":{\"header\":\"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InBKUXoxNE9HZ1JNdTh2b2VCOW9BaiJ9\",\"payload\":\"eyJodHRwczovL2FwaS5kZXYuYWRtaW4ubXkuZmxvd3BheS5pby9yb2xlcyI6WyJBZG1pbiJdLCJuaWNrbmFtZSI6ImRldit0ZXN0YXV0b21hdGlvbiIsIm5hbWUiOiJkZXZAZmxvd3BheS5pbyIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci8yNzYzMDk1YTE2OWM2Y2IwOTkyOThmNjUxNDYxMmI3Yj9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRmRlLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDI0LTA2LTI4VDA5OjA1OjI0LjI3NVoiLCJlbWFpbCI6ImRldkBmbG93cGF5LmlvIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmxvd3BheS1kZXYuZXUuYXV0aDAuY29tLyIsImF1ZCI6IlBkUnhSOUJDWG1jdlJ2MXJpSHVDNVFOUVV4b0VQeXVPIiwiaWF0IjoxNzE5NTY1NTI2LCJleHAiOjE3MTk2MDE1MjYsInN1YiI6ImF1dGgwfDY2N2FiZGZiYjhiZWRiNjE0ZTgzOWIxYSIsImF1dGhfdGltZSI6MTcxOTU2NTUyNCwic2lkIjoiaXlBMnNHajR2bEpOM3pwSFVneld0QmJ1RkJNU21HblQiLCJub25jZSI6IlgxbG5lalJEU0VKSFdFUlBPWEpYTTNGRFVGbHdPRlk0WjNKaFJFZDJkVlpHWlVWeVRqUjBVRkUxTGc9PSJ9\",\"signature\":\"ktlafxmJDdaq9iOWc5PPOZpqn97aGk8tdl3MobwhKSXcAJHKrbf5M470aFptQ4ZY_ism3SWpiHEYyAHfyYx8RVR6k2RjehP8J3y3wyERWz_pKiO0rujQcqm7KJFBQocIxWVDFk1UXBLnApB50QIxShH8AbjWhURglr110QWRyUWmZVgqdIf09-iNq-pZN_CgWfOLgBBWNI6fifZIAuI4hOnV0awwN6Ghfy0V7fwtKD4PtQbyPgtfnspforeQjH3fQ7TUD5nRZI93biq11Yp5QpVF7CRDtQm-N0jnW45bW1fk3Sn_rfrGMNlA_6zRJ7tJZd_8u8sxQtY3cQkcDjt3Pg\"},\"header\":{\"alg\":\"RS256\",\"typ\":\"JWT\",\"kid\":\"pJQz14OGgRMu8voeB9oAj\"},\"claims\":{\"__raw\":\"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InBKUXoxNE9HZ1JNdTh2b2VCOW9BaiJ9.eyJodHRwczovL2FwaS5kZXYuYWRtaW4ubXkuZmxvd3BheS5pby9yb2xlcyI6WyJBZG1pbiJdLCJuaWNrbmFtZSI6ImRldit0ZXN0YXV0b21hdGlvbiIsIm5hbWUiOiJkZXZAZmxvd3BheS5pbyIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci8yNzYzMDk1YTE2OWM2Y2IwOTkyOThmNjUxNDYxMmI3Yj9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRmRlLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDI0LTA2LTI4VDA5OjA1OjI0LjI3NVoiLCJlbWFpbCI6ImRldkBmbG93cGF5LmlvIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vZmxvd3BheS1kZXYuZXUuYXV0aDAuY29tLyIsImF1ZCI6IlBkUnhSOUJDWG1jdlJ2MXJpSHVDNVFOUVV4b0VQeXVPIiwiaWF0IjoxNzE5NTY1NTI2LCJleHAiOjE3MTk2MDE1MjYsInN1YiI6ImF1dGgwfDY2N2FiZGZiYjhiZWRiNjE0ZTgzOWIxYSIsImF1dGhfdGltZSI6MTcxOTU2NTUyNCwic2lkIjoiaXlBMnNHajR2bEpOM3pwSFVneld0QmJ1RkJNU21HblQiLCJub25jZSI6IlgxbG5lalJEU0VKSFdFUlBPWEpYTTNGRFVGbHdPRlk0WjNKaFJFZDJkVlpHWlVWeVRqUjBVRkUxTGc9PSJ9.ktlafxmJDdaq9iOWc5PPOZpqn97aGk8tdl3MobwhKSXcAJHKrbf5M470aFptQ4ZY_ism3SWpiHEYyAHfyYx8RVR6k2RjehP8J3y3wyERWz_pKiO0rujQcqm7KJFBQocIxWVDFk1UXBLnApB50QIxShH8AbjWhURglr110QWRyUWmZVgqdIf09-iNq-pZN_CgWfOLgBBWNI6fifZIAuI4hOnV0awwN6Ghfy0V7fwtKD4PtQbyPgtfnspforeQjH3fQ7TUD5nRZI93biq11Yp5QpVF7CRDtQm-N0jnW45bW1fk3Sn_rfrGMNlA_6zRJ7tJZd_8u8sxQtY3cQkcDjt3Pg\",\"https://api.dev.admin.my.flowpay.io/roles\":[\"Admin\"],\"nickname\":\"dev+testautomation\",\"name\":\"dev@flowpay.io\",\"picture\":\"https://s.gravatar.com/avatar/2763095a169c6cb099298f6514612b7b?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fde.png\",\"updated_at\":\"2024-06-28T09:05:24.275Z\",\"email\":\"dev@flowpay.io\",\"email_verified\":true,\"iss\":\"https://flowpay-dev.eu.auth0.com/\",\"aud\":\"PdRxR9BCXmcvRv1riHuC5QNQUxoEPyuO\",\"iat\":1719565526,\"exp\":1719601526,\"sub\":\"auth0|667abdfbb8bedb614e839b1a\",\"auth_time\":1719565524,\"sid\":\"iyA2sGj4vlJN3zpHUgzWtBbuFBMSmGnT\",\"nonce\":\"X1lnejRDSEJHWERPOXJXM3FDUFlwOFY4Z3JhREd2dVZGZUVyTjR0UFE1Lg==\"},\"user\":{\"https://api.dev.admin.my.flowpay.io/roles\":[\"Admin\"],\"nickname\":\"dev+testautomation\",\"name\":\"dev@flowpay.io\",\"picture\":\"https://s.gravatar.com/avatar/2763095a169c6cb099298f6514612b7b?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fde.png\",\"updated_at\":\"2024-06-28T09:05:24.275Z\",\"email\":\"dev@flowpay.io\",\"email_verified\":true,\"sub\":\"auth0|667abdfbb8bedb614e839b1a\"}},\"audience\":\"https://api.dev.admin.my.flowpay.io\",\"oauthTokenScope\":\"openid profile email\",\"client_id\":\"PdRxR9BCXmcvRv1riHuC5QNQUxoEPyuO\"},\"expiresAt\":1719601526}"
+        }
+      ]
+    }
+  ]
+}
