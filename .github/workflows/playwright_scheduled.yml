@@ -16,6 +16,8 @@ jobs:
     - name: Install Playwright browsers
       run: npx playwright install --with-deps
     - name: Run scheduled Playwright tests
+      env:
+        GHA_TOKEN: ${{ secrets.GHA_PLAYWRIGHT_TOKEN }}
       run: npx playwright test
     - uses: actions/upload-artifact@v3
       if: always()
